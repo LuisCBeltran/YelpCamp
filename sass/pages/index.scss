@@ -1,0 +1,109 @@
+
+@use '../abstracts/typography' as t;
+@use '../abstracts/variable' as v;
+@use '../abstracts/mixins' as m;
+
+@forward '../abstracts/globals';
+
+body {
+    display: grid;
+    font-family: t.$archivo;
+    grid-template-areas: "header"
+                         "hero"
+                         "main"
+                         "footer";
+    background-color: v.$secondary;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: v.$paragraph;
+}
+
+//Header
+
+header {
+    .header__img-container {
+        height: 107px;
+        background-image: url('../assets/Logo.svg');
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 20px;
+    }
+}
+
+//Hero
+
+.hero {
+    .hero__img-container {
+        height: 375px;
+        background-image: url('../assets/Hero Image.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+//Main
+
+main {
+    margin-top: 36px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .main__title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 39.17px;
+        color: v.$title;
+    }
+    .main__description {
+        margin-top: 8px;
+    }
+    .main__list {
+        list-style-type: none;
+        margin-top: 16px;
+        .list-item {
+            display: flex;
+            margin-top: 12px;
+            .check {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                margin-right: 12px;
+                background-image: url('../assets/Checkmark.svg');
+            }
+        }
+    }
+    .main__button {
+        width: 216px;
+        height: 63px;
+        margin-top: 24px;
+        @include m.button;
+    }
+}
+
+//Footer
+
+footer {
+    margin-top: 36px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    .partners-container {
+        display: flex;
+        .partner-airbnb {
+            width: 82px;
+            height: 42px;
+            background-image: url('../assets/Airbnb.svg');
+        }
+        .partner-booking {
+            width: 130px;
+            height: 42px;
+            background-image: url('../assets/Booking.svg');
+        }
+        .partner-plumguide {
+            width: 160px;
+            height: 42px;
+            background-image: url('../assets/Plum Guide.svg');
+        }
+    }
+}
+

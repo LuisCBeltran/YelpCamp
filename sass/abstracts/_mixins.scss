@@ -1,0 +1,12 @@
+// Button
+
+@mixin button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    background-color: #000;
+    border-radius: 5px;
+}

@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  font-family: "Archivo", sans-serif;
+  grid-template-areas: "header" "hero" "main" "footer";
+  background-color: #F9F6F1;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #595959;
+}
+
+header .header__img-container {
+  height: 107px;
+  background-image: url("../assets/Logo.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 20px;
+}
+
+.hero .hero__img-container {
+  height: 375px;
+  background-image: url("../assets/Hero Image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  margin-top: 36px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main .main__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 39.17px;
+  color: #000;
+}
+main .main__description {
+  margin-top: 8px;
+}
+main .main__list {
+  list-style-type: none;
+  margin-top: 16px;
+}
+main .main__list .list-item {
+  display: flex;
+  margin-top: 12px;
+}
+main .main__list .list-item .check {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  background-image: url("../assets/Checkmark.svg");
+}
+main .main__button {
+  width: 216px;
+  height: 63px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+footer {
+  margin-top: 36px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+footer .partners-container {
+  display: flex;
+}
+footer .partners-container .partner-airbnb {
+  width: 82px;
+  height: 42px;
+  background-image: url("../assets/Airbnb.svg");
+}
+footer .partners-container .partner-booking {
+  width: 130px;
+  height: 42px;
+  background-image: url("../assets/Booking.svg");
+}
+footer .partners-container .partner-plumguide {
+  width: 160px;
+  height: 42px;
+  background-image: url("../assets/Plum Guide.svg");
+}
+
+/*# sourceMappingURL=index.css.map */
