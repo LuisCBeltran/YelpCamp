@@ -15,7 +15,16 @@ body {
   line-height: 27px;
   color: #595959;
 }
+@media screen and (min-width: 1440px) {
+  body {
+    grid-template-areas: "header hero" "main hero" "footer hero";
+    grid-template-columns: 54.1% 45.9%;
+  }
+}
 
+header {
+  grid-area: header;
+}
 header .header__img-container {
   height: 107px;
   background-image: url("../assets/Logo.svg");
@@ -23,25 +32,63 @@ header .header__img-container {
   background-position-y: center;
   background-position-x: 20px;
 }
+@media screen and (min-width: 768px) {
+  header .header__img-container {
+    background-position-x: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header .header__img-container {
+    background-position-x: 150px;
+  }
+}
 
+.hero {
+  grid-area: hero;
+}
 .hero .hero__img-container {
   height: 375px;
-  background-image: url("../assets/Hero Image.jpg");
+  background-image: url("../assets/Hero Image (Tablet and Mobile).jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+@media screen and (min-width: 1440px) {
+  .hero .hero__img-container {
+    height: 100vh;
+    background-image: url("../assets/Hero Image.jpg");
+    background-size: cover;
+  }
+}
 
 main {
+  grid-area: main;
   margin-top: 36px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  main {
+    margin-top: 40px;
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main {
+    margin-top: 16px;
+    padding: 0 150px;
+  }
 }
 main .main__title {
   font-size: 36px;
   font-weight: 700;
   line-height: 39.17px;
   color: #000;
+}
+@media screen and (min-width: 768px) {
+  main .main__title {
+    font-size: 56px;
+    line-height: 60.93px;
+  }
 }
 main .main__description {
   margin-top: 8px;
@@ -76,9 +123,20 @@ main .main__button {
 }
 
 footer {
+  grid-area: footer;
   margin-top: 36px;
   margin-bottom: 40px;
   padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  footer {
+    padding: 0 150px;
+  }
 }
 footer .partners-container {
   display: flex;

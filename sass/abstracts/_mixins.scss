@@ -1,3 +1,13 @@
+@use './variables' as v;
+
+// Breakpoints
+
+@mixin media-up ($breakpoint) {
+    @media screen and (min-width: map-get(v.$breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
 // Button
 
 @mixin button {
@@ -10,3 +20,5 @@
     background-color: #000;
     border-radius: 5px;
 }
+
+// 
