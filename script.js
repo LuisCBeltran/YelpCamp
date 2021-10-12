@@ -13,6 +13,8 @@ function openMenu() {
     document.getElementById("navButtonOpen").style.display = "flex";
 }
 
+// Close menu
+
 function closeMenu() {
     document.getElementById("navLinks").style.opacity = "0";
     document.getElementById("navLinks").style.visibility = "hidden";

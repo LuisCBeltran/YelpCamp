@@ -11,6 +11,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
+    color: v.$paragraph;
 }
 
 .acknowledgement {
@@ -98,9 +99,12 @@ header {
         .nav-links__logout {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
             padding: 20px 0;
             a {
+                width: max-content;
                 color: v.$black;
                 text-decoration: none;
                 margin-bottom: 10px;
@@ -109,9 +113,12 @@ header {
         .nav-links__login {
             display: none;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
             padding: 20px 0;
             a {
+                width: max-content;
                 color: v.$black;
                 text-decoration: none;
                 margin-bottom: 10px;
@@ -120,3 +127,134 @@ header {
     }
 }
 
+.search-box {
+    margin: 0 20px;
+    background-color: v.$secondary;
+    padding: 0 36px;
+    border-radius: 5px;
+    .search-box__title {
+        font-size: 36px;
+        line-height: 39.17px;
+        margin-top: 36px;
+        color: v.$black;
+    }
+    .search-box__description {
+        margin-top: 8px;
+    }
+    .search-input__container {
+        margin-top: 16px;
+        .input {
+            height: 63px;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            background-color: v.$white;
+            border-radius: 5px;
+            .input__search-icon {
+                height: 16px;
+                width: 16px;
+                background-image: url('../assets/Search Icon.svg');
+                background-size: cover;
+                cursor: pointer;
+            }
+            .search-input {
+                width: 85%;
+                margin-left: 12px;
+                font-size: 18px;
+                border: none;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        .search-button {
+            height: 63px;
+            width: 100%;
+            margin-top: 16px;
+            background-color: v.$black;
+            font-size: 18px;
+            font-weight: 700;
+            color: v.$white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+    .search-box__link {
+        display: inline-block;
+        margin-top: 16px;
+        margin-bottom: 36px;
+        color: v.$paragraph;
+    }
+}
+
+.campground-card__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 40px 20px 0 20px;
+    .campground-card {
+        margin-top: 20px;
+        padding: 15px;
+        border: 1px solid #DADADA;
+        border-radius: 5px;
+        .campground-card__img {
+            width: 100%;
+            height: 183px;
+            background-size: cover;
+            border-radius: 5px;
+        }
+        .mount-ulap {
+            background-image: url('../assets/Camp Images/Mount Ulap.jpg');
+        }
+        .calaguas-islands {
+            background-image: url('../assets/Camp Images/Calaguas Island.jpg');
+        }
+        .onay-beach {
+            background-image: url('../assets/Camp Images/Onay Beach.jpg');
+        }
+        .seven-sisters-waterfall {
+            background-image: url('../assets/Camp Images/Seven Sisters Waterfall.jpg');
+        }
+        .latik-riverside {
+            background-image: url('../assets/Camp Images/Latik Riverside.jpg');
+        }
+        .buloy-springs {
+            background-image: url('../assets/Camp Images/Buloy Springs.jpg');
+        }
+        .campground-card__title {
+            margin-top: 16px;
+            font-size: 18px;
+            line-height: 19.58px;
+            color: v.$black;
+        }
+        .campground-card__description {
+            margin-top: 9px;
+        }
+        .campground-card__button {
+            width: 100%;
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 16px;
+            border: 1px solid #DADADA;
+            border-radius: 5px;
+            font-weight: 700;
+            color: v.$black;
+            cursor: pointer;
+        }
+    }
+}
+
+footer {
+    height: 187px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    .footer__image-container {
+        width: 118px;
+        height: 27px;
+        background-image: url('../assets/Logo.svg');
+        background-size: cover;
+    }
+}
