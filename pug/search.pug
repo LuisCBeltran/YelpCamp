@@ -12,7 +12,8 @@ html(lang="en")
             p This project was made by <a href="#">Colt Steele</a> and designed by <a href="#">Codewell</a>
             .acknowledgement__close-button#acknowledgementCloseButton(onclick="closeAcknowledgement()")
         header 
-            .header__image-container 
+            .header__image-container
+                a.header__home-link(href="#") Home
             nav
                 .nav-button#navButton(onclick="openMenu()") 
                     .hamburger-img-container
@@ -20,11 +21,11 @@ html(lang="en")
                     .close-img-container
             .nav-links#navLinks
                 .nav-links__logout#navLinksLogout
-                    a(href="#", onclick="login()") Login 
-                    a(href="#") Create an account 
+                    a.nav-links__login-btn(href="#", onclick="login()") Login 
+                    a.nav-links__create-btn(href="#") Create an account 
                 .nav-links__login#navLinksLogin 
-                    a(href="#") Luis C.
-                    a(href="#", onclick="logout()") Logout
+                    a.nav-links__name-btn(href="#") Luis C.
+                    a.nav-links__logout-btn(href="#", onclick="logout()") Logout
         section.search-box
             h1.search-box__title Welcome to YelpCamp!
             p.search-box__description View our hand-picked campgrounds from all over the world, or add your own.
