@@ -1,0 +1,58 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./styles/campground.css")
+        script(src="script.js") 
+        title Mount Ulap - YelpCamp 
+    body
+        .acknowledgement#acknowledgement
+            p This project was made by <a href="#">Colt Steele</a> and designed by <a href="#">Codewell</a>
+            .acknowledgement__close-button#acknowledgementCloseButton(onclick="closeAcknowledgement()")
+        header 
+            .header__image-container
+                a.header__home-link(href="#") Home
+            nav
+                .nav-button#navButton(onclick="openMenu()") 
+                    .hamburger-img-container
+                .nav-button-open#navButtonOpen(onclick="closeMenu()")
+                    .close-img-container
+            .nav-links#navLinks
+                .nav-links__logout#navLinksLogout
+                    a.nav-links__login-btn(href="#", onclick="login()") Login 
+                    a.nav-links__create-btn(href="#") Create an account 
+                .nav-links__login#navLinksLogin 
+                    a.nav-links__name-btn(href="#") Luis C.
+                    a.nav-links__logout-btn(href="#", onclick="logout()") Logout
+        main
+            .campground-des
+                .campground-des__img-container.mount-ulap__img-container
+                .campground-des__tandp
+                    h1.campground-des__title Mount Ulap
+                    p.campground-des__price $104.99/night
+                p.campground-des__description Mount Ulap is a 7.7 kilometer moderately trafficked point-to-point trail located near Tuba, Benguet, Philippines that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking.
+                p.campground-des__submittedby Submitted by Andrew Mike
+        section.reviews
+            .reviews__item 
+                .reviews__tandd 
+                    h2 Adam Jones
+                    p 13h ago
+                p.reviews__review Honestly one of the best experiences ever, took us a while to figure out how to get there but it was amazing!
+            .reviews__item 
+                .reviews__tandd 
+                    h2 Isaac Dylan
+                    p 1 day ago
+                p.reviews__review Traveling changes you as a person, you gain more perspective, this is the perfect spot to do that.
+            .reviews__item 
+                .reviews__tandd 
+                    h2 Hudson Luca
+                    p 3 days ago
+                p.reviews__review Definitely recommend going there, not too far and not a lot of people to ruin the experience.
+            a.reviews__button <span></span>Leave a Review
+        section.map 
+            .map__img-container
+        footer 
+            .footer__image-container
+        

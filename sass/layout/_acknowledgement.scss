@@ -1,0 +1,28 @@
+.acknowledgement {
+    display: flex;
+    background-color: v.$black;
+    justify-content: center;
+    align-items: center;
+    grid-area: acknowledgement;
+    p {
+        width: 312px;
+        color: v.$white;
+        font-weight: 700;
+        text-align: center;
+        margin: 10px 36px 10px 0;
+        @include m.media-up(tb) {
+            width: auto;
+        }
+        a {
+            color: #75D6FF;
+        }
+    }
+    .acknowledgement__close-button {
+        min-width: 9px;
+        max-width: 9px;
+        height: 9px;
+        background-image: url('../assets/Close.svg');
+        background-size: cover;
+        cursor: pointer;
+    }
+}

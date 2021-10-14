@@ -1,0 +1,19 @@
+footer {
+    height: 187px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    grid-area: footer;
+    @include m.media-up(tb) {
+        padding: 40px;
+    }
+    @include m.media-up(tb) {
+        padding: 0 150px;
+    }
+    .footer__image-container {
+        width: 118px;
+        height: 27px;
+        background-image: url('../assets/Logo.svg');
+        background-size: cover;
+    }
+}

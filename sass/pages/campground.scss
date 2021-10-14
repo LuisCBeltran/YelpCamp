@@ -1,0 +1,133 @@
+@use '../abstracts/typography' as t;
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+@import '../abstracts/globals';
+
+body {
+    display: grid;
+    grid-template-areas: "acknowledgement"
+                         "header"
+                         "main"
+                         "reviews"
+                         "map"
+                         "footer";
+    font-family: t.$archivo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: v.$paragraph;
+}
+
+// Acknowledgement
+
+@import '../layout/acknowledgement';
+
+// Header
+
+@import '../layout/header';
+
+// Campground Description
+
+main {
+    grid-area: main;
+    .campground-des {
+        margin: 0 20px;
+        padding: 36px;
+        border: 1px solid #dadada;
+        border-radius: 5px;
+        .campground-des__img-container {
+            height: 203px;
+            background-size: cover;
+            border-radius: 5px;
+        }
+        .mount-ulap__img-container {
+            background-image: url('../assets/Camp Images/Mount Ulap.jpg');
+        }
+        .campground-des__tandp {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 26px;
+            .campground-des__title {
+                font-size: 24px;
+                line-height: 26.11px;
+                font-weight: 700;
+                color: v.$black;
+            }
+            .campground-des__price {
+                color: v.$black;
+            }
+        }
+        .campground-des__description {
+            margin-top: 16px;
+        }
+        .campground-des__submittedby {
+            margin-top: 16px;
+            font-style: italic;
+        }
+    }
+}
+
+// Reviews
+
+.reviews {
+    margin: 42px 20px 0 20px;
+    padding: 10px 36px 0 36px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+    grid-area: reviews;
+    .reviews__item {
+        border-bottom: 1px solid #DADADA;
+        .reviews__tandd {
+            margin-top: 26px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            h2 {
+                color: v.$black;
+                font-size: 18px;
+                line-height: 19.58px;
+            }
+        }
+        .reviews__review {
+            margin-top: 16px;
+            margin-bottom: 26px;
+        }
+    }
+    .reviews__button {
+        @include m.button;
+        margin-top: 26px;
+        margin-bottom: 36px;
+        width: 216px;
+        height: 63px;
+        cursor: pointer;
+        span {
+            width: 24px;
+            height: 24px;
+            background-image: url('../assets/Chat Bubble.svg');
+            margin-right: 10px;
+        }
+    }
+}
+
+// Map
+
+.map {
+    margin: 42px 20px 0 20px;
+    padding: 36px;
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+    grid-area: map;
+    .map__img-container {
+        height: 385px;
+        background-image: url('../assets/Map.png');
+        background-size: cover;
+        border-radius: 5px;
+    }
+}
+
+// Footer
+
+@import '../layout/footer';

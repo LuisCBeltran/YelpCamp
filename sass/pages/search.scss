@@ -2,7 +2,7 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
 
-@forward '../abstracts/globals';
+@import '../abstracts/globals';
 
 body {
     display: flex;
@@ -16,179 +16,11 @@ body {
 
 // Acknowledgement
 
-.acknowledgement {
-    display: flex;
-    background-color: v.$black;
-    justify-content: center;
-    align-items: center;
-    p {
-        width: 312px;
-        color: v.$white;
-        font-weight: 700;
-        text-align: center;
-        margin: 10px 36px 10px 0;
-        @include m.media-up(tb) {
-            width: auto;
-        }
-        a {
-            color: #75D6FF;
-        }
-    }
-    .acknowledgement__close-button {
-        min-width: 9px;
-        max-width: 9px;
-        height: 9px;
-        background-image: url('../assets/Close.svg');
-        background-size: cover;
-        cursor: pointer;
-    }
-}
+@import '../layout/acknowledgement';
 
 // Header
 
-header {
-    position: relative;
-    height: 120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    @include m.media-up(tb) {
-        padding: 0 40px;
-    }
-    @include m.media-up(dt) {
-        padding: 0 150px;
-        height: 143px;
-    }
-    .header__image-container {
-        width: 118px;
-        height: 27px;
-        background-image: url('../assets/Logo.svg');
-        background-repeat: no-repeat;
-        @include m.media-up(dt) {
-            width: 200px;
-        }
-        .header__home-link {
-            display: none;
-            float: right;
-            color: v.$paragraph;
-            text-decoration: none;
-            @include m.media-up(dt) {
-                display: block;
-            }
-        }
-    }
-    nav {
-        .nav-button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 40px;
-            width: 40px;
-            background-color: v.$secondary;
-            border-radius: 5px;
-            cursor: pointer;
-            @include m.media-up(dt) {
-                display: none;
-            }
-            .hamburger-img-container {
-                height: 20px;
-                width: 20px;
-                background-image: url('../assets/Hamburger Menu.svg');
-                background-size: cover;
-            }
-        }
-        .nav-button-open {
-            display: none;
-            justify-content: center;
-            align-items: center;
-            height: 40px;
-            width: 40px;
-            background-color: v.$secondary;
-            border-radius: 5px;
-            cursor: pointer;
-            .close-img-container {
-                height: 13px;
-                width: 13px;
-                background-image: url('../assets/Close.svg');
-                background-size: cover;
-            }
-        }
-    }
-    .nav-links {
-        width: 100%;
-        position: absolute;
-        top: 80px;
-        right: 0;
-        background-color: v.$secondary;
-        opacity: 0;
-        visibility: hidden;
-        transition: 600ms;
-        @include m.media-up(dt) {
-            width: auto;
-            position: relative;
-            top: 0;
-            opacity: 1;
-            background-color: transparent;
-            visibility: visible;
-            transition: none;
-        }
-        .nav-links__logout {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px 0;
-            @include m.media-up(dt) {
-                flex-direction: row;
-                padding: 0;
-            }
-            a {
-                width: max-content;
-                color: v.$black;
-                text-decoration: none;
-                margin-bottom: 10px;
-                @include m.media-up(dt) {
-                    margin-bottom: 0;
-                }
-            }
-            .nav-links__create-btn {
-                @include m.media-up(dt) {
-                    @include m.button;
-                    display: grid;
-                    place-items: center;
-                    width: 205px;
-                    height: 63px;
-                    margin-left: 20px;
-                }
-            }
-        }
-        .nav-links__login {
-            display: none;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px 0;
-            @include m.media-up(dt) {
-                flex-direction: row;
-                padding: 0;
-            }
-            a {
-                width: max-content;
-                color: v.$black;
-                text-decoration: none;
-                margin-bottom: 10px;
-            }
-            .nav-links__logout-btn {
-                @include m.media-up(dt) {
-                    margin-left: 24px;
-                }
-            }
-        }
-    }
-}
+@import '../layout/header';
 
 // Search Box
 
@@ -355,21 +187,4 @@ header {
 
 // Footer
 
-footer {
-    height: 187px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    @include m.media-up(tb) {
-        padding: 40px;
-    }
-    @include m.media-up(tb) {
-        padding: 0 150px;
-    }
-    .footer__image-container {
-        width: 118px;
-        height: 27px;
-        background-image: url('../assets/Logo.svg');
-        background-size: cover;
-    }
-}
+@import '../layout/footer';
