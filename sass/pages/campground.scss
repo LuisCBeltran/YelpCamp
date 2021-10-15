@@ -17,6 +17,14 @@ body {
     font-weight: 400;
     line-height: 27px;
     color: v.$paragraph;
+    @include m.media-up(dt) {
+        grid-template-areas: "acknowledgement acknowledgement"
+                             "header header"
+                             "map main"
+                             ". reviews"
+                             "footer footer";
+        grid-template-columns: 38.5% 61.5%;
+    }
 }
 
 // Acknowledgement
@@ -36,10 +44,20 @@ main {
         padding: 36px;
         border: 1px solid #dadada;
         border-radius: 5px;
+        @include m.media-up(tb) {
+            margin: 0 40px;
+            padding: 56px;
+        }
+        @include m.media-up(dt) {
+            margin: 0 150px 0 0;
+        }
         .campground-des__img-container {
             height: 203px;
             background-size: cover;
             border-radius: 5px;
+            @include m.media-up(tb) {
+                height: 361px;
+            }
         }
         .mount-ulap__img-container {
             background-image: url('../assets/Camp Images/Mount Ulap.jpg');
@@ -78,6 +96,13 @@ main {
     border: 1px solid #DADADA;
     border-radius: 5px;
     grid-area: reviews;
+    @include m.media-up(tb) {
+        margin: 42px 40px 0 40px;
+        padding: 30px 56px 0 56px;
+    }
+    @include m.media-up(dt) {
+        margin: 42px 150px 0 0;
+    }
     .reviews__item {
         border-bottom: 1px solid #DADADA;
         .reviews__tandd {
@@ -103,6 +128,12 @@ main {
         width: 216px;
         height: 63px;
         cursor: pointer;
+        @include m.media-up(tb) {
+            margin-bottom: 56px;
+        }
+        @include m.media-up(dt) {
+            align-self: flex-end;
+        }
         span {
             width: 24px;
             height: 24px;
@@ -120,6 +151,14 @@ main {
     border: 1px solid #DADADA;
     border-radius: 5px;
     grid-area: map;
+    @include m.media-up(tb) {
+        margin: 42px 40px 0 40px;
+        padding: 56px;
+    }
+    @include m.media-up(dt) {
+        margin: 0 37px 0 150px;
+        height: 497px;
+    }
     .map__img-container {
         height: 385px;
         background-image: url('../assets/Map.png');

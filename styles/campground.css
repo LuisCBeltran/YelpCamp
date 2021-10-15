@@ -14,12 +14,19 @@ body {
   line-height: 27px;
   color: #595959;
 }
+@media screen and (min-width: 1440px) {
+  body {
+    grid-template-areas: "acknowledgement acknowledgement" "header header" "map main" ". reviews" "footer footer";
+    grid-template-columns: 38.5% 61.5%;
+  }
+}
 
 .acknowledgement {
   display: flex;
   background-color: #000;
   justify-content: center;
   align-items: center;
+  grid-area: acknowledgement;
 }
 .acknowledgement p {
   width: 312px;
@@ -52,6 +59,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  grid-area: header;
 }
 @media screen and (min-width: 768px) {
   header {
@@ -164,7 +172,7 @@ header .nav-links .nav-links__logout a {
   text-decoration: none;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
   header .nav-links .nav-links__logout a {
     margin-bottom: 0;
   }
@@ -206,6 +214,11 @@ header .nav-links .nav-links__login a {
   text-decoration: none;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  header .nav-links .nav-links__login a {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1440px) {
   header .nav-links .nav-links__login .nav-links__logout-btn {
     margin-left: 24px;
@@ -221,10 +234,26 @@ main .campground-des {
   border: 1px solid #dadada;
   border-radius: 5px;
 }
+@media screen and (min-width: 768px) {
+  main .campground-des {
+    margin: 0 40px;
+    padding: 56px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main .campground-des {
+    margin: 0 150px 0 0;
+  }
+}
 main .campground-des .campground-des__img-container {
   height: 203px;
   background-size: cover;
   border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+  main .campground-des .campground-des__img-container {
+    height: 361px;
+  }
 }
 main .campground-des .mount-ulap__img-container {
   background-image: url("../assets/Camp Images/Mount Ulap.jpg");
@@ -260,6 +289,17 @@ main .campground-des .campground-des__submittedby {
   border-radius: 5px;
   grid-area: reviews;
 }
+@media screen and (min-width: 768px) {
+  .reviews {
+    margin: 42px 40px 0 40px;
+    padding: 30px 56px 0 56px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .reviews {
+    margin: 42px 150px 0 0;
+  }
+}
 .reviews .reviews__item {
   border-bottom: 1px solid #DADADA;
 }
@@ -293,6 +333,16 @@ main .campground-des .campground-des__submittedby {
   height: 63px;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  .reviews .reviews__button {
+    margin-bottom: 56px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .reviews .reviews__button {
+    align-self: flex-end;
+  }
+}
 .reviews .reviews__button span {
   width: 24px;
   height: 24px;
@@ -306,6 +356,18 @@ main .campground-des .campground-des__submittedby {
   border: 1px solid #DADADA;
   border-radius: 5px;
   grid-area: map;
+}
+@media screen and (min-width: 768px) {
+  .map {
+    margin: 42px 40px 0 40px;
+    padding: 56px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .map {
+    margin: 0 37px 0 150px;
+    height: 497px;
+  }
 }
 .map .map__img-container {
   height: 385px;
@@ -326,7 +388,7 @@ footer {
     padding: 40px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   footer {
     padding: 0 150px;
   }

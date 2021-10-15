@@ -102,7 +102,7 @@ header {
                 color: v.$black;
                 text-decoration: none;
                 margin-bottom: 10px;
-                @include m.media-up(dt) {
+                @include m.media-up(tb) {
                     margin-bottom: 0;
                 }
             }
@@ -133,6 +133,9 @@ header {
                 color: v.$black;
                 text-decoration: none;
                 margin-bottom: 10px;
+                @include m.media-up(tb) {
+                    margin-bottom: 0;
+                }
             }
             .nav-links__logout-btn {
                 @include m.media-up(dt) {

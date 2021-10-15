@@ -7,7 +7,7 @@ footer {
     @include m.media-up(tb) {
         padding: 40px;
     }
-    @include m.media-up(tb) {
+    @include m.media-up(dt) {
         padding: 0 150px;
     }
     .footer__image-container {
