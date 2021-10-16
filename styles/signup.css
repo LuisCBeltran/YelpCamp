@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #595959;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 107px;
+  padding: 0 20px;
+}
+header .header__img-container {
+  width: 118px;
+  height: 27px;
+  background-image: url("../assets/Logo.svg");
+}
+header .header__link {
+  color: #595959;
+  text-decoration: none;
+}
+
+main {
+  padding: 0 20px;
+}
+main .main__title {
+  font-size: 36px;
+  line-height: 39.17px;
+  color: #000;
+  margin-bottom: 36px;
+}
+main .input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+main .input input {
+  margin-top: 16px;
+  padding: 18px 24px;
+  height: 63px;
+  background-color: #F7F7F7;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #ACACAC;
+  outline: none;
+}
+main .input-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 5px;
+  margin-top: 24px;
+  width: 100%;
+  height: 63px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+main .already-an-user {
+  margin-top: 16px;
+}
+main .already-an-user a {
+  color: #009FE0;
+}
+
+.opinion {
+  margin-top: 40px;
+  padding: 50px 20px;
+  background-color: #F9F6F1;
+}
+.opinion .opinion-text {
+  font-size: 24px;
+  line-height: 39px;
+  color: #000;
+}
+.opinion .opinion-user {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+}
+.opinion .opinion-user .ou__img-container {
+  width: 40px;
+  height: 40px;
+  background-image: url("../assets/User Testimonial.svg");
+}
+.opinion .opinion-user .ou__nandp {
+  margin-left: 16px;
+}
+.opinion .opinion-user .ou__nandp p {
+  line-height: 26px;
+}
+.opinion .opinion-user .ou__nandp .ou__name {
+  font-weight: 700;
+  color: #000;
+}
+
+/*# sourceMappingURL=signup.css.map */

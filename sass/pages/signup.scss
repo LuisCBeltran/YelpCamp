@@ -1,0 +1,113 @@
+@use '../abstracts/typography' as t;
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+@import '../abstracts/globals';
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: t.$archivo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: v.$paragraph;
+}
+
+// Header
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 107px;
+    padding: 0 20px;
+    .header__img-container {
+        width: 118px;
+        height: 27px;
+        background-image: url('../assets/Logo.svg');
+    }
+    .header__link {
+        color: v.$paragraph;
+        text-decoration: none;
+    }
+}
+
+// Main
+
+main {
+    padding: 0 20px;
+    .main__title {
+        font-size: 36px;
+        line-height: 39.17px;
+        color: v.$black;
+        margin-bottom: 36px;
+    }
+    .input {
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+        input {
+            margin-top: 16px;
+            padding: 18px 24px;
+            height: 63px;
+            background-color: #F7F7F7;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            color: #ACACAC;
+            outline: none;
+        }
+    }
+    .input-btn {
+        @include m.button;
+        margin-top: 24px;
+        width: 100%;
+        height: 63px;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .already-an-user {
+        margin-top: 16px;
+        a {
+            color: #009FE0;
+        }
+    }
+}
+
+// Opinion
+
+.opinion {
+    margin-top: 40px;
+    padding: 50px 20px;
+    background-color: v.$secondary;
+    .opinion-text {
+        font-size: 24px;
+        line-height: 39px;
+        color: v.$black;
+    }
+    .opinion-user {
+        margin-top: 26px;
+        display: flex;
+        align-items: center;
+        .ou__img-container {
+            width: 40px;
+            height: 40px;
+            background-image: url('../assets/User Testimonial.svg');
+        }
+        .ou__nandp {
+            margin-left: 16px;
+            p {
+                line-height: 26px;
+            }
+            .ou__name {
+                font-weight: 700;
+                color: v.$black;
+            }
+        }
+    }
+}

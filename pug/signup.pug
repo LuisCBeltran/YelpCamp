@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./styles/signup.css")
+        script(src="script.js") 
+        title Sign Up - YelpCamp
+    body 
+        header 
+            .header__img-container 
+            a.header__link(href="#") ← Back to campgrounds
+        main 
+            h1.main__title Start exploring camps from all around the world. 
+            .input-username.input
+                label(for="username") Username 
+                input(type="text" name="username" placeholder="luisc")
+            .input-password.input
+                label(for="password") Password 
+                input(type="password" name="password" placeholder="Choose Password")
+            button.input-btn Create an account 
+            p.already-an-user Already an user? <a href="#">Sign In</a> 
+        section.opinion 
+            h2.opinion-text “YelpCamp has honestly saved me hours of research time, and the camps on here are definitely well picked and added.”
+            .opinion-user
+                .ou__img-container 
+                .ou__nandp 
+                    p.ou__name May Andrews
+                    p.ou__profession Professional Hiker
