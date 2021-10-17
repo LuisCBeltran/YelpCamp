@@ -16,6 +16,15 @@ body {
   line-height: 27px;
   color: #595959;
 }
+@media screen and (min-width: 1440px) {
+  body {
+    display: grid;
+    grid-template-areas: "header opinion" "main opinion";
+    grid-template-columns: 58% 42%;
+    grid-template-rows: 11.9% 88.1%;
+    height: 100vh;
+  }
+}
 
 header {
   display: flex;
@@ -24,6 +33,19 @@ header {
   width: 100%;
   height: 107px;
   padding: 0 20px;
+  grid-area: header;
+}
+@media screen and (min-width: 768px) {
+  header {
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header {
+    padding: 0 150px;
+    align-items: center;
+    align-self: flex-start;
+  }
 }
 header .header__img-container {
   width: 118px;
@@ -37,6 +59,21 @@ header .header__link {
 
 main {
   padding: 0 20px;
+  width: 100%;
+  grid-area: main;
+}
+@media screen and (min-width: 768px) {
+  main {
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 110px 150px 0 150px;
+    align-self: start;
+  }
 }
 main .main__title {
   font-size: 36px;
@@ -44,10 +81,20 @@ main .main__title {
   color: #000;
   margin-bottom: 36px;
 }
+@media screen and (min-width: 1440px) {
+  main .main__title {
+    margin-bottom: 12px;
+  }
+}
 main .input {
   display: flex;
   flex-direction: column;
   margin-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  main .input {
+    width: 534px;
+  }
 }
 main .input input {
   margin-top: 16px;
@@ -76,6 +123,11 @@ main .input-btn {
   font-size: 18px;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  main .input-btn {
+    width: 534px;
+  }
+}
 main .already-an-user {
   margin-top: 16px;
 }
@@ -87,6 +139,23 @@ main .already-an-user a {
   margin-top: 40px;
   padding: 50px 20px;
   background-color: #F9F6F1;
+  width: 100%;
+  grid-area: opinion;
+}
+@media screen and (min-width: 768px) {
+  .opinion {
+    padding: 50px 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .opinion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 150px;
+    margin-top: 0;
+  }
 }
 .opinion .opinion-text {
   font-size: 24px;
