@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Archivo", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #595959;
+}
+
+.acknowledgement {
+  display: flex;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  grid-area: acknowledgement;
+}
+.acknowledgement p {
+  width: 312px;
+  color: #FFF;
+  font-weight: 700;
+  text-align: center;
+  margin: 10px 36px 10px 0;
+}
+@media screen and (min-width: 768px) {
+  .acknowledgement p {
+    width: auto;
+  }
+}
+.acknowledgement p a {
+  color: #75D6FF;
+}
+.acknowledgement .acknowledgement__close-button {
+  min-width: 9px;
+  max-width: 9px;
+  height: 9px;
+  background-image: url("../assets/Close.svg");
+  background-size: cover;
+  cursor: pointer;
+}
+
+header {
+  position: relative;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  grid-area: header;
+}
+@media screen and (min-width: 768px) {
+  header {
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header {
+    padding: 0 150px;
+    height: 143px;
+  }
+}
+header .header__image-container {
+  width: 118px;
+  height: 27px;
+  background-image: url("../assets/Logo.svg");
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 1440px) {
+  header .header__image-container {
+    width: 200px;
+  }
+}
+header .header__image-container .header__home-link {
+  display: none;
+  float: right;
+  color: #595959;
+  text-decoration: none;
+}
+@media screen and (min-width: 1440px) {
+  header .header__image-container .header__home-link {
+    display: block;
+  }
+}
+header nav .nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: #F9F6F1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media screen and (min-width: 1440px) {
+  header nav .nav-button {
+    display: none;
+  }
+}
+header nav .nav-button .hamburger-img-container {
+  height: 20px;
+  width: 20px;
+  background-image: url("../assets/Hamburger Menu.svg");
+  background-size: cover;
+}
+header nav .nav-button-open {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: #F9F6F1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+header nav .nav-button-open .close-img-container {
+  height: 13px;
+  width: 13px;
+  background-image: url("../assets/Close.svg");
+  background-size: cover;
+}
+header .nav-links {
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  background-color: #F9F6F1;
+  opacity: 0;
+  visibility: hidden;
+  transition: 600ms;
+}
+@media screen and (min-width: 1440px) {
+  header .nav-links {
+    width: auto;
+    position: relative;
+    top: 0;
+    opacity: 1;
+    background-color: transparent;
+    visibility: visible;
+    transition: none;
+  }
+}
+header .nav-links .nav-links__logout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+}
+@media screen and (min-width: 1440px) {
+  header .nav-links .nav-links__logout {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+header .nav-links .nav-links__logout a {
+  width: max-content;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  header .nav-links .nav-links__logout a {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header .nav-links .nav-links__logout .nav-links__create-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    background-color: #000;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    width: 205px;
+    height: 63px;
+    margin-left: 20px;
+  }
+}
+header .nav-links .nav-links__login {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+}
+@media screen and (min-width: 1440px) {
+  header .nav-links .nav-links__login {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+header .nav-links .nav-links__login a {
+  width: max-content;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  header .nav-links .nav-links__login a {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header .nav-links .nav-links__login .nav-links__logout-btn {
+    margin-left: 24px;
+  }
+}
+
+main {
+  padding: 0 20px;
+  width: 100%;
+  grid-area: main;
+}
+@media screen and (min-width: 768px) {
+  main {
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: auto;
+    margin: 0 auto;
+  }
+}
+main .main__title {
+  font-size: 36px;
+  line-height: 39.17px;
+  color: #000;
+  margin-bottom: 36px;
+}
+@media screen and (min-width: 1440px) {
+  main .main__title {
+    margin-bottom: 12px;
+  }
+}
+main .input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  main .input {
+    width: 534px;
+  }
+}
+main .input input {
+  margin-top: 16px;
+  padding: 18px 24px;
+  height: 63px;
+  background-color: #F7F7F7;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #ACACAC;
+  outline: none;
+}
+main .input #description {
+  margin-top: 16px;
+  padding: 18px 24px 18px 24px;
+  background-color: #F7F7F7;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #ACACAC;
+  outline: none;
+  resize: none;
+  font-family: "Archivo", sans-serif;
+  line-height: 27px;
+}
+@media screen and (min-width: 768px) {
+  main .input #description {
+    padding-right: 29px;
+  }
+}
+main .input-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 5px;
+  margin-top: 24px;
+  width: 100%;
+  height: 63px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  main .input-btn {
+    width: 534px;
+  }
+}
+
+footer {
+  height: 187px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  grid-area: footer;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  footer {
+    padding: 0 150px;
+  }
+}
+footer .footer__image-container {
+  width: 118px;
+  height: 27px;
+  background-image: url("../assets/Logo.svg");
+  background-size: cover;
+}
+
+/*# sourceMappingURL=addcampground.css.map */
