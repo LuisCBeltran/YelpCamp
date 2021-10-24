@@ -21,7 +21,7 @@ This is a solution to [YelpCamp](https://www.codewell.cc/challenges/yelpcamp-by-
 
 ### Links
 
-- Solution URL: [Order summary card](https://github.com/LuisCBeltran/YelpCamp)
+- Solution URL: [YelpCamp](https://github.com/LuisCBeltran/YelpCamp)
 - Live Site URL: [YelpCamp](https://luiscbeltran.github.io/YelpCamp/)
 
 ## My process
