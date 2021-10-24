@@ -9,11 +9,11 @@ html(lang="en")
         title Mount Ulap - YelpCamp 
     body
         .acknowledgement#acknowledgement
-            p This project was made by <a href="#">Colt Steele</a> and designed by <a href="#">Codewell</a>
+            p This project was made by <a href="https://github.com/Colt">Colt Steele</a> and designed by <a href="https://www.codewell.cc/">Codewell</a>
             .acknowledgement__close-button#acknowledgementCloseButton(onclick="closeAcknowledgement()")
         header 
             .header__image-container
-                a.header__home-link(href="#") Home
+                a.header__home-link(href="index.html") Home
             nav
                 .nav-button#navButton(onclick="openMenu()") 
                     .hamburger-img-container
@@ -21,8 +21,8 @@ html(lang="en")
                     .close-img-container
             .nav-links#navLinks
                 .nav-links__logout#navLinksLogout
-                    a.nav-links__login-btn(href="#", onclick="login()") Login 
-                    a.nav-links__create-btn(href="#") Create an account 
+                    a.nav-links__login-btn(href="signin.html", target="_blank", onclick="login()") Login 
+                    a.nav-links__create-btn(href="signup.html") Create an account 
                 .nav-links__login#navLinksLogin 
                     a.nav-links__name-btn(href="#") Luis C.
                     a.nav-links__logout-btn(href="#", onclick="logout()") Logout
@@ -50,7 +50,7 @@ html(lang="en")
                     h2 Hudson Luca
                     p 3 days ago
                 p.reviews__review Definitely recommend going there, not too far and not a lot of people to ruin the experience.
-            a.reviews__button <span></span>Leave a Review
+            a.reviews__button(href="addcomment.html") <span></span>Leave a Review
         section.map 
             .map__img-container
         footer 

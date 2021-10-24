@@ -1,0 +1,101 @@
+@use '../abstracts/typography' as t;
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+@import '../abstracts/globals';
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: t.$archivo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: v.$paragraph;
+}
+
+// Acknowledgement
+
+@import '../layout/acknowledgement';
+
+// Header
+
+@import '../layout/header';
+
+// Main
+
+main {
+    padding: 0 20px;
+    width: 100%;
+    grid-area: main;
+    @include m.media-up(tb) {
+        padding: 0 40px;
+    }
+    @include m.media-up(dt) {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: auto;
+        margin: 0 auto;
+    }
+    .main__title {
+        font-size: 36px;
+        line-height: 39.17px;
+        color: v.$black;
+        margin-bottom: 36px;
+        @include m.media-up(dt) {
+            margin-bottom: 12px;
+        }
+    }
+    .input {
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+        @include m.media-up(tb) {
+            width: 534px;
+        }
+        input {
+            margin-top: 16px;
+            padding: 18px 24px;
+            height: 63px;
+            background-color: #F7F7F7;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            color: #ACACAC;
+            outline: none;
+        }
+        #description {
+            margin-top: 16px;
+            padding: 18px 24px 18px 24px;
+            background-color: #F7F7F7;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            color: #ACACAC;
+            outline: none;
+            resize: none;
+            font-family: t.$archivo;
+            line-height: 27px;
+            @include m.media-up(tb) {
+                padding-right: 29px;
+            }
+        }
+    }
+    .input-btn {
+        @include m.button;
+        margin-top: 24px;
+        width: 100%;
+        height: 63px;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        @include m.media-up(tb) {
+            width: 534px;
+        }
+    }
+}
+
+// Footer
+
+@import '../layout/footer';

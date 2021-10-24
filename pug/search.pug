@@ -9,11 +9,11 @@ html(lang="en")
         title Search - YelpCamp
     body
         .acknowledgement#acknowledgement
-            p This project was made by <a href="#">Colt Steele</a> and designed by <a href="#">Codewell</a>
+            p This project was made by <a href="https://github.com/Colt">Colt Steele</a> and designed by <a href="https://www.codewell.cc/">Codewell</a>
             .acknowledgement__close-button#acknowledgementCloseButton(onclick="closeAcknowledgement()")
         header 
             .header__image-container
-                a.header__home-link(href="#") Home
+                a.header__home-link(href="index.html") Home
             nav
                 .nav-button#navButton(onclick="openMenu()") 
                     .hamburger-img-container
@@ -21,8 +21,8 @@ html(lang="en")
                     .close-img-container
             .nav-links#navLinks
                 .nav-links__logout#navLinksLogout
-                    a.nav-links__login-btn(href="#", onclick="login()") Login 
-                    a.nav-links__create-btn(href="#") Create an account 
+                    a.nav-links__login-btn(href="signin.html", target="_blank", onclick="login()") Login 
+                    a.nav-links__create-btn(href="signup.html") Create an account 
                 .nav-links__login#navLinksLogin 
                     a.nav-links__name-btn(href="#") Luis C.
                     a.nav-links__logout-btn(href="#", onclick="logout()") Logout
@@ -34,38 +34,38 @@ html(lang="en")
                     .input__search-icon
                     input.search-input(placeholder="Search for camps")
                 button.search-button Search
-            a.search-box__link(href="#") Or add your own campground
+            a.search-box__link(href="addcampground.html") Or add your own campground
         main.campground-card__container 
             .campground-card
                 .campground-card__img.mount-ulap 
                 h2.campground-card__title Mount Ulap
                 p.campground-card__description One of the most famous hikes in Benguet is Mt Ulap in Itogon.
-                a.campground-card__button View Campground
+                a.campground-card__button(href="campground.html") View Campground
             .campground-card
                 .campground-card__img.calaguas-islands 
                 h2.campground-card__title Calaguas Islands
                 p.campground-card__description A paradise of islands that can rival the white sand beauty of Boracay.
-                a.campground-card__button View Campground
+                a.campground-card__button(href="campground.html") View Campground
             .campground-card 
                 .campground-card__img.onay-beach
                 h2.campground-card__title Onay Beach
                 p.campground-card__description This is one of the best beach camping sites, beautiful and pristine.
-                a.campground-card__button View Campground
+                a.campground-card__button(href="campground.html") View Campground
             .campground-card 
                 .campground-card__img.seven-sisters-waterfall
                 h2.campground-card__title Seven Sisters Waterfall
                 p.campground-card__description The Seven Sisters is the 39th tallest waterfall in Norway.
-                a.campground-card__button View Campground
+                a.campground-card__button(href="campground.html") View Campground
             .campground-card 
                 .campground-card__img.latik-riverside
                 h2.campground-card__title Latik Riverside
                 p.campground-card__description Philippines is one of the most dazzling countries in all of Asia.
-                a.campground-card__button View Campground
+                a.campground-card__button(href="campground.html") View Campground
             .campground-card 
                 .campground-card__img.buloy-springs
                 h2.campground-card__title Buloy Springs
                 p.campground-card__description This is one of the best beach camping sites, beautiful and pristine.
-                a.campground-card__button View Campground
+                a.campground-card__button(href="campground.html") View Campground
         section.campground-map 
             .campground-map__img-container
         footer 

@@ -219,186 +219,95 @@ header .nav-links .nav-links__login a {
   }
 }
 
-.search-box {
-  margin: 0 20px;
-  background-color: #F9F6F1;
-  padding: 0 36px;
-  border-radius: 5px;
+main {
+  padding: 0 20px;
+  width: 100%;
+  grid-area: main;
 }
 @media screen and (min-width: 768px) {
-  .search-box {
-    margin: 0 40px;
-    padding: 0 56px;
+  main {
+    padding: 0 40px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .search-box {
-    margin: 0 150px;
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: auto;
+    margin: 0 auto;
   }
 }
-.search-box .search-box__title {
+main .main__title {
   font-size: 36px;
   line-height: 39.17px;
-  margin-top: 36px;
   color: #000;
+  margin-bottom: 36px;
 }
-@media screen and (min-width: 768px) {
-  .search-box .search-box__title {
-    margin-top: 68px;
+@media screen and (min-width: 1440px) {
+  main .main__title {
+    margin-bottom: 12px;
   }
 }
-.search-box .search-box__description {
-  margin-top: 8px;
-}
-@media screen and (min-width: 768px) {
-  .search-box .search-box__description {
-    width: 408px;
-  }
-}
-.search-box .search-input__container {
-  margin-top: 16px;
-}
-@media screen and (min-width: 768px) {
-  .search-box .search-input__container {
-    display: flex;
-  }
-}
-.search-box .search-input__container .input {
-  height: 63px;
-  padding: 0 24px;
+main .input {
   display: flex;
-  align-items: center;
-  background-color: #FFF;
-  border-radius: 5px;
+  flex-direction: column;
+  margin-top: 24px;
 }
 @media screen and (min-width: 768px) {
-  .search-box .search-input__container .input {
-    width: 255px;
+  main .input {
+    width: 534px;
   }
 }
-.search-box .search-input__container .input .input__search-icon {
-  height: 16px;
-  width: 16px;
-  background-image: url("../assets/Search Icon.svg");
-  background-size: cover;
-  cursor: pointer;
-}
-.search-box .search-input__container .input .search-input {
-  width: 85%;
-  margin-left: 12px;
-  font-size: 18px;
+main .input input {
+  margin-top: 16px;
+  padding: 18px 24px;
+  height: 63px;
+  background-color: #F7F7F7;
   border: none;
-}
-.search-box .search-input__container .input .search-input:focus {
+  border-radius: 5px;
+  font-size: 18px;
+  color: #ACACAC;
   outline: none;
 }
-.search-box .search-input__container .search-button {
-  height: 63px;
-  width: 100%;
+main .input #description {
   margin-top: 16px;
-  background-color: #000;
-  font-size: 18px;
-  font-weight: 700;
-  color: #FFF;
+  padding: 18px 24px 18px 24px;
+  background-color: #F7F7F7;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-}
-@media screen and (min-width: 768px) {
-  .search-box .search-input__container .search-button {
-    width: 109px;
-    margin-top: 0;
-    margin-left: 16px;
-  }
-}
-.search-box .search-box__link {
-  display: inline-block;
-  margin-top: 16px;
-  margin-bottom: 36px;
-  color: #595959;
-}
-@media screen and (min-width: 768px) {
-  .search-box .search-box__link {
-    margin-bottom: 68px;
-  }
-}
-
-.campground-card__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 40px 20px 0 20px;
-}
-@media screen and (min-width: 768px) {
-  .campground-card__container {
-    grid-template-columns: 1fr 1fr;
-    gap: 0 20px;
-    margin: 40px 40px 0 40px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .campground-card__container {
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 80px 150px 0 150px;
-    gap: 0 30px;
-  }
-}
-.campground-card__container .campground-card {
-  margin-top: 20px;
-  padding: 15px;
-  border: 1px solid #DADADA;
-  border-radius: 5px;
-}
-@media screen and (min-width: 1440px) {
-  .campground-card__container .campground-card {
-    margin-top: 30px;
-  }
-}
-.campground-card__container .campground-card .campground-card__img {
-  width: 100%;
-  height: 183px;
-  background-size: cover;
-  border-radius: 5px;
-}
-.campground-card__container .campground-card .mount-ulap {
-  background-image: url("../assets/Camp Images/Mount Ulap.jpg");
-}
-.campground-card__container .campground-card .calaguas-islands {
-  background-image: url("../assets/Camp Images/Calaguas Island.jpg");
-}
-.campground-card__container .campground-card .onay-beach {
-  background-image: url("../assets/Camp Images/Onay Beach.jpg");
-}
-.campground-card__container .campground-card .seven-sisters-waterfall {
-  background-image: url("../assets/Camp Images/Seven Sisters Waterfall.jpg");
-}
-.campground-card__container .campground-card .latik-riverside {
-  background-image: url("../assets/Camp Images/Latik Riverside.jpg");
-}
-.campground-card__container .campground-card .buloy-springs {
-  background-image: url("../assets/Camp Images/Buloy Springs.jpg");
-}
-.campground-card__container .campground-card .campground-card__title {
-  margin-top: 16px;
   font-size: 18px;
-  line-height: 19.58px;
-  color: #000;
+  color: #ACACAC;
+  outline: none;
+  resize: none;
+  font-family: "Archivo", sans-serif;
+  line-height: 27px;
 }
-.campground-card__container .campground-card .campground-card__description {
-  margin-top: 9px;
+@media screen and (min-width: 768px) {
+  main .input #description {
+    padding-right: 29px;
+  }
 }
-.campground-card__container .campground-card .campground-card__button {
-  width: 100%;
-  height: 56px;
+main .input-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 16px;
-  border: 1px solid #DADADA;
-  border-radius: 5px;
   font-weight: 700;
-  color: #000;
-  cursor: pointer;
+  color: white;
   text-decoration: none;
+  background-color: #000;
+  border-radius: 5px;
+  margin-top: 24px;
+  width: 100%;
+  height: 63px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  main .input-btn {
+    width: 534px;
+  }
 }
 
 footer {
@@ -425,4 +334,4 @@ footer .footer__image-container {
   background-size: cover;
 }
 
-/*# sourceMappingURL=search.css.map */
+/*# sourceMappingURL=addcomment.css.map */

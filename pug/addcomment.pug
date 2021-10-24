@@ -6,7 +6,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="./styles/addcampground.css")
         script(src="script.js") 
-        title Add New Campground - YelpCamp 
+        title Add New Comment - YelpCamp 
     body
         .acknowledgement#acknowledgement
             p This project was made by <a href="https://github.com/Colt">Colt Steele</a> and designed by <a href="https://www.codewell.cc/">Codewell</a>
@@ -27,19 +27,10 @@ html(lang="en")
                     a.nav-links__name-btn(href="#") Luis C.
                     a.nav-links__logout-btn(href="#", onclick="logout()") Logout
         main 
-            h1.main__title Add New Campground 
-            .input-campname.input
-                label(for="campname") Campground Name 
-                input(type="text" name="campname" placeholder="Seven Sisters Waterfall")
-            .input-price.input
-                label(for="price") Price
-                input(type="text" name="price" placeholder="$149")
-            .input-price.input
-                label(for="image") Image
-                input(type="text" name="image" placeholder="www.thepinoytraveler.com/2018/0...")
+            h1.main__title Add New Comment 
             .input-description.input
                 label(for="description") Description
-                textarea#description(name="description" rows="8" placeholder="The Seven Sisters is the 39th tallest waterfall in Norway. The 410-metre tall waterfall consists of seven separate streams, and the tallest of the seven has a free fall that measures 250 metres. The waterfall is located along the Geirangerfjorden in Stranda Municipality in Møre og Romsdal county, Norway.")
-            button.input-btn Add Campground 
+                textarea#description(name="description" rows="8" placeholder="This was probably the best camp i’ve visited this past year, definitely recommend visiting any time soon.")
+            button.input-btn Post Comment 
         footer 
             .footer__image-container

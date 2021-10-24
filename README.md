@@ -1,31 +1,51 @@
+# Codewell - YelpCamp
 
-# Welcome to Codewell! 👋
+This is a solution to [YelpCamp](https://www.codewell.cc/challenges/yelpcamp-by-colt-steele--6144c7c8a383e41090a3d84b). 
 
-Codewell's aim is to provide you with real-world design templates that you can use to practice your HTML and CSS projects. 
+## Table of contents
 
-Free or paid, all templates are high quality and will make great portfolio pieces.
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-### I've completed the challenge, now what?
+## Overview
 
-We recommend using one of these two websites to deploy your projects
+### Screenshot
 
-- [GitHub Pages](https://pages.github.com/)
-- [Netlify](https://www.netlify.com/)
+![](./assets/ScreenshotYelpCamp.png)
 
-They're super easy to setup and you should have your website up and running in no time, just follow their instructions.
+### Links
 
+- Solution URL: [Order summary card](https://github.com/LuisCBeltran/YelpCamp)
+- Live Site URL: [YelpCamp](https://luiscbeltran.github.io/YelpCamp/)
 
-### Submit your solution to Codewell
+## My process
 
-Visit the relevant challenge on [Codewell](https://codewell.cc) and click on 'Submit Solution' right under the challenge.
-Enter all the title, Github repo URL, Live URL (Netlify or GH Pages), and tell the community what challenges you've faced.
+### Built with
 
-### Join our community on Slack
+- Pug
+- Sass
+- Flexbox
+- Mobile-first workflow
+- JavaScript
 
-If you want more real-time communication, you can visit our community on [Slack](https://join.slack.com/t/codewell-hq/shared_invite/zt-ni8c9g8h-gNYWrmqQ3Uh37dcLg9~LMQ). 
+### What I learned
 
-### Fonts Used
+This is the first project with different web pages. I used a modular approach for the first time.
 
-https://fonts.google.com/specimen/Archivo   
+### Continued development
+
+Although I used a modular approach, I could used more frequently to improve my productivity.
+
+## Author
+
+- Website - [Luis C. Beltrán](https://github.com/LuisCBeltran)
+- Frontend Mentor - [@LuisCBeltran](https://www.frontendmentor.io/profile/LuisCBeltran)
+- Twitter - [@luisc_beltran](https://twitter.com/luisc_beltran)
 
 
